@@ -1,6 +1,7 @@
-pip install wheel
+cd galen-api-ports
 ./distribute_galenpy.sh -no-upload
-pip install dist/galenpy-0.1.2-py2.py3-none-any.whl
+export GALENPY_VERSION=$(python -c 'import py; print py.__version__')
+pip install dist/galenpy-${GALENPY_VERSION}-py2.py3-none-any.whl
 
 cd ..
 git clone git@github.com:valermor/galen-sample-py-tests.git

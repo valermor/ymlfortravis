@@ -1,1 +1,3 @@
+before install:"git clone https://github.com/valermor/galen-api-ports.git"
+script: pip install wheel
 script: ./run_tests.sh  

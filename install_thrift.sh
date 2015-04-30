@@ -1,6 +1,7 @@
 stat $(which sudo)
+which gem
 echo "installing rubygems"
-sudo apt-get install rubygems
+sudo gem install --user-install executable-hooks
 echo "*******************"
 sudo gem install --user-install executable-hooks
 sudo apt-get update -qq

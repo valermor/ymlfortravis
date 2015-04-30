@@ -1,7 +1,7 @@
 stat $(which sudo)
 which gem
 echo "installing rubygems"
-sudo gem install --user-install executable-hooks
+/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem install --user-install executable-hooks
 echo "*******************"
 sudo gem install --user-install executable-hooks
 sudo apt-get update -qq

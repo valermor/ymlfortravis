@@ -5,8 +5,9 @@ python:
 before_install:
  - "git clone https://github.com/valermor/galen-api-ports.git"
  - "git clone https://github.com/valermor/galen-sample-py-tests.git"
-# command to install dependencies
+ - chmod +x install_galenpy.sh
 install:
+ - "chmod 700 install_galenpy.sh"
  - "./install_galenpy.sh"
  - "pip install -r galen-sample-py-tests/requirements.txt"
 script: './run_tests.sh'

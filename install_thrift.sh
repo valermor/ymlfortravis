@@ -1,4 +1,5 @@
 stat $(which sudo)
+sudo apt-get install rubygems
 sudo gem install --user-install executable-hooks
 sudo apt-get update -qq
 sudo apt-get install libboost-dev libboost-test-dev libboost-program-options-dev libevent-dev automake libtool flex bison pkg-config g++ libssl-dev

@@ -1,11 +1,11 @@
+chmod -R +x galen-api-ports
 cd galen-api-ports
-"LISTING CONTENT OF GALENPY"
+echo "LISTING CONTENT OF GALENPY"
 ls -al
-"BUILDING GALENPY"
-chmod +x distribute_galenpy.sh
+echo "BUILDING GALENPY"
 ./distribute_galenpy.sh -no-upload
 export GALENPY_VERSION=$(python -c 'import py; print py.__version__')
-"INSTALLING GALENPY"
+echo "INSTALLING GALENPY"
 pip install dist/galenpy-${GALENPY_VERSION}-py2.py3-none-any.whl
 pip freeze
 cd ..

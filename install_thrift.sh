@@ -1,5 +1,7 @@
 stat $(which sudo)
+echo "installing rubygems"
 sudo apt-get install rubygems
+echo "*******************"
 sudo gem install --user-install executable-hooks
 sudo apt-get update -qq
 sudo apt-get install libboost-dev libboost-test-dev libboost-program-options-dev libevent-dev automake libtool flex bison pkg-config g++ libssl-dev

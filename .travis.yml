@@ -4,8 +4,8 @@ language:
 python:
   - "2.7"
 before_install:
- - "git clone https://github.com/valermor/galen-api-ports.git"
- - "git clone https://github.com/valermor/galen-sample-py-tests.git"
+ - git clone https://github.com/valermor/galen-api-ports.git
+ - git clone https://github.com/valermor/galen-sample-py-tests.git
  - chmod +x install_thrift.sh
  - chmod +x install_galenpy.sh
  - ./install_thrift.sh

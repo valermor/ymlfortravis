@@ -10,7 +10,7 @@ before_install:
  - chmod +x install_galenpy.sh
  - ./install_thrift.sh
 install:
- - "chmod 700 install_galenpy.sh"
+ - chmod 700 install_galenpy.sh
  - "./install_galenpy.sh"
  - "pip install -r galen-sample-py-tests/requirements.txt"
  - "export GRID_URL=http://valermor:764435f9-7986-4878-b6c8-8a100fda8cba@ondemand.saucelabs.com:80/wd/hub"
